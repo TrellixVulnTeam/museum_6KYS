@@ -1,0 +1,78 @@
+@import "../../../utils/variables.scss";
+.header__burger {
+  display: none;
+  padding: 0;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50px;
+  right: 10px;
+  transition: 0.5s;
+  z-index: 111111111;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.6;
+  }
+  @media screen and (max-width: 1024px) {
+    display: block;
+  }
+  .header__burger-line {
+    position: absolute;
+    height: 2px;
+    width: 32px;
+    background-color: white;
+  }
+  .second {
+    top: 10px;
+  }
+  .third {
+    top: 20px;
+  }
+  .forth {
+    top: 10px;
+  }
+  .first--active {
+    display: none;
+  }
+  .second--active {
+    transform: rotate(45deg);
+    transition: 0.2s;
+  }
+  .third--active {
+    display: none;
+  }
+  .forth--active {
+    transform: rotate(-45deg);
+    transition: 0.2s;
+  }
+}
+.modal__header {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  background-color: $black-color;
+  transform: translate(-100%, -150px);
+  transition: 0.4s;
+  .modal__navigation {
+    .modal__navigation-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 130px;
+      height: 270px;
+      .modal__navigation-link {
+        color: $white-color;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
+.modal__header--active {
+  transform: translate(0%, -150px);
+  transition: 0.4s;
+}

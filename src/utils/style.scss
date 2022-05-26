@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;400&display=swap");
+@import "./variables";
+
+body {
+  width: 100%;
+
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: $white-color;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}

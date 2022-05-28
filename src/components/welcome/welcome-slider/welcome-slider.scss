@@ -1,0 +1,55 @@
+@import "../../../utils/variables";
+
+.welcome__content-slider {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 600px;
+  height: 120px;
+  margin-top: auto;
+  margin-left: auto;
+  background-color: black;
+  @media screen and (max-width: 768px) {
+    margin-right: auto;
+  }
+  p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+  .slider__dots {
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    .dots__dot {
+      width: 16px;
+      height: 16px;
+      background-color: $white-color;
+      transition: 0.4s;
+      cursor: pointer;
+      &:hover {
+        background-color: $hover-gold-color;
+      }
+    }
+  }
+  .slider__controls {
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    .controls__left {
+      transform: rotate(180deg);
+    }
+    .conrols__control {
+      cursor: pointer;
+      &:hover {
+        path {
+          fill: $hover-gold-color;
+          transition: 0.4s;
+        }
+      }
+    }
+  }
+}

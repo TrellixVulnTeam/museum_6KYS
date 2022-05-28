@@ -5,4 +5,5 @@ import "./components/header/style/header.scss";
 import "./components/modal/styles/modal.scss";
 
 import { createHeaderModal } from "./components/modal/js/header-modal";
+
 createHeaderModal();

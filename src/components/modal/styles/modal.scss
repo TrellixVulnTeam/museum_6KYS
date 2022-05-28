@@ -51,15 +51,35 @@
   width: 300px;
   height: 100%;
   background-color: $black-color;
-  transform: translate(-100%, -150px);
+  transform: translate(-300%, -150px);
   transition: 0.4s;
+  @media screen and (max-width: 768px) {
+    transform: translate(-300%, -40px);
+  }
   .modal__navigation {
+    padding-top: 120px;
+    @media screen and (max-width: 768px) {
+      padding-top: 50px;
+    }
     .modal__navigation-list {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       width: 130px;
       height: 270px;
+      li {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        &:hover {
+          color: $hover-gold-color;
+          .modal__navigation-link {
+            color: $hover-gold-color;
+          }
+        }
+      }
       .modal__navigation-link {
         color: $white-color;
         font-family: "Roboto";
@@ -68,11 +88,83 @@
         font-size: 20px;
         line-height: 23px;
         letter-spacing: 2px;
+        transition: 0.4s;
       }
     }
   }
 }
 .modal__header--active {
+  height: 100%;
   transform: translate(0%, -150px);
   transition: 0.4s;
+  z-index: 11111111111;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    transform: translate(0%, -40px);
+  }
+}
+
+.modal-mobile {
+  display: none;
+  max-width: 660px;
+  margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    display: block;
+    .modal-mobile__image-block {
+      width: 100%;
+      gap: 20px;
+      display: grid;
+      margin-top: 30px;
+      grid-template-columns: 1fr 1fr;
+      .image__block-main {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 100%;
+      }
+      .image__block-below-first {
+        width: 100%;
+      }
+      .image__block-below-second {
+        width: 100%;
+      }
+    }
+  }
+  // @media screen and (max-width: 480px) {
+  //   .modal-mobile__image-block {
+  //     grid-template-columns: 1fr 1fr 1fr;
+  //     .image__block-main {
+  //       width: 95px;
+  //       height: 95px;
+  //     }
+  //     .image__block-below-first {
+  //       width: 95px;
+  //       height: 95px;
+  //     }
+  //     .image__block-below-second {
+  //       width: 95px;
+  //       height: 95px;
+  //     }
+  //   }
+  // }
+  .modal__social-block {
+    max-width: 340px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    img {
+      width: 48px;
+      height: 48px;
+      transition: 0.4s;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  .modal__underline {
+    margin: 30px 0px;
+    width: 100%;
+    height: 2px;
+    background-color: $white-color;
+  }
 }

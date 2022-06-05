@@ -7,8 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>museum</title>
   <!-- <link rel="icon" href="assets/favicon.ico"> -->
-  <script defer src="bundle.js"></script>
-</head>
+<script defer src="bundle.js"></script></head>
 
 <body>
   <header>
@@ -49,15 +48,26 @@
               <li><a class='modal__navigation-link' href="Visiting">Tickets </a><span>></span></li>
               <li><a class='modal__navigation-link' href="Visiting">Contacts </a><span>></span></li>
             </ul>
-            <div class="modal__mobile">
-              <div class="modal__image-block">
+            <div class="modal-adaptive">
+              <div class="modal-adaptive__tablet">
                 <img class="image__block-main" src="a9a996f0caf6649781ea.png" alt="modal-main">
                 <img class="image__block-below-first" src="2a5712439c7900017cb2.png" alt="modal-below-1">
                 <img class="image__block-below-second" src="f1eed1bccef08b227268.png" alt="modal-below-2">
               </div>
+              <div class="modal-adaptive__mobile">
+                <img src="bb861b9223e628599f64.png" alt="image-mobile-1">
+                <img src="8dbf14271d41e97df79e.png" alt="image-mobile-2">
+                <img src="39c41263db2b62d90fb0.png" alt="image-mobile-3">
+              </div>
               <div class="modal__underline"></div>
+              <div class="modal__social-block">
+                <img src="a802ec03ef153678f09d.svg" alt="youtube-icon">
+                <img src="6789d7afa4fcfee329af.svg" alt="instagramm-icon">
+                <img src="82fc209e7290334da021.svg" alt="facebook-icon">
+                <img src="34e5082130b5db8f0194.svg" alt="twitter-icon">
+                <img src="8782e118a1b64d26e454.svg" alt="pinterest-icon">
+              </div>
             </div>
-
           </nav>
         </div>
         <div class="welcome__body">
@@ -67,9 +77,9 @@
             class="welcome__content-link">Discover the Louvre</a>
         </div>
         <div class="welcome__content-slider">
-          <p><span>01</span> | <span>05</span></p>
+          <p><span class="current">01</span> | <span class="total">05</span></p>
           <div class="slider__dots">
-            <div class="dots__dot"></div>
+            <div class="dots__dot dots__dot-active"></div>
             <div class="dots__dot"></div>
             <div class="dots__dot"></div>
             <div class="dots__dot"></div>
@@ -88,7 +98,6 @@
                 d="M24.2775 1.97284e-06C26.0983 1.68661 28.0058 2.91738 30 3.69231L30 4.30769C28.0058 5.10541 26.0983 6.33618 24.2775 8L22.7601 8C23.6272 6.5641 24.4653 5.47009 25.2746 4.71795L1.56078e-05 4.71795L1.57604e-05 3.28205L25.2746 3.28205C24.4653 2.52992 23.6272 1.4359 22.7601 1.86378e-06L24.2775 1.97284e-06Z"
                 fill="white" />
             </svg>
-
           </div>
         </div>
       </div>
@@ -100,8 +109,8 @@
     <section></section>
   </main>
 
-  <footer></footer>
 
+  <footer></footer>
 
 </body>
 
